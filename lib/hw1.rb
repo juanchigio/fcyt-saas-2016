@@ -5,11 +5,21 @@ VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z]+)*\.[a-z]+\z/i
 # Part 1
 # http://ruby-doc.org/core-2.2.0/Regexp.html
 def validate_email?(email)
-  # YOUR CODE HERE
+  if email =~ VALID_EMAIL_REGEX
+    return true
+  end
+  return false
 end
 
 def is_palindrome?(phrase)
-  # YOUR CODE HERE
+
+ if phrase.empty?
+    return false
+ end
+  
+aux = phrase.downcase.scan(/\w/)
+
+aux == aux.reverse
 end
 
 # Part 2

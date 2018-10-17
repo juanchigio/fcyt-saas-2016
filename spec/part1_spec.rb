@@ -1,4 +1,4 @@
-require '../lib/hw1.rb'
+require './lib/hw1.rb'
 
 describe 'Ruby homework part 1' do
 
